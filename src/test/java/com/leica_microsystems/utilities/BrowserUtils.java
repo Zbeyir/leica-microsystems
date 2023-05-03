@@ -18,11 +18,14 @@ public class BrowserUtils {
 
     public static String linkcheck() {
 
-
         String currentWindow = Driver.getDriver().getWindowHandle();
+
         Set<String> handles = Driver.getDriver().getWindowHandles();
+
         for (String windowHandle : handles) {
+
             if (!windowHandle.equals(currentWindow)) {
+
                 Driver.getDriver().switchTo().window(windowHandle);
                 break;
             }

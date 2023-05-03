@@ -8,8 +8,7 @@ import com.leica_microsystems.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 
 public class leica_microsystems_SocialMediaCheckStepDefinitions {
 
@@ -32,8 +31,6 @@ public class leica_microsystems_SocialMediaCheckStepDefinitions {
     public void user_click_linkedin_link() {
         basePage.linkedinLink.click();
         BrowserUtils.sleep(2);
-
-
 
     }
 
